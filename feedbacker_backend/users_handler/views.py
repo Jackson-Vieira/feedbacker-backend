@@ -10,3 +10,7 @@ def current_user_detail(request):
     user = request.user
     serializer = UserSerializer(user)
     return Response(serializer.data)
+
+
+# def generateNewApiKey():
+#     return str(uuid.uuid4())
