@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'users_handler',
+    'feedbacker_auth',
+
     # external libs,
     'rest_framework',
     'django_filters',
