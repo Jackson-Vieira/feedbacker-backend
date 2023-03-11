@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from feedbacks.api.urls import router
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('auth/', include('feedbacker_auth.urls')),
-    path('users/', include('users_handler.urls')),
+    path('auth/', include('feedbacker_auth.urls'), name='auth'),
+    path('users/', include('users_handler.urls'), name='users'),
+    path('', include(router.urls), name='feedbacks')
 ]
