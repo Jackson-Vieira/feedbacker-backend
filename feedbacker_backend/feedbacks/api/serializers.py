@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from feedbacker_backend.feedbacks.models import Feedback
+from ..models import Feedback
 
 
 class FeedbackSerializer(serializers.ModelSerializer):

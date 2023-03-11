@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     'users_handler',
     'feedbacker_auth',
+    'feedbacks',
 
     # external libs,
     'rest_framework',
