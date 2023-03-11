@@ -17,7 +17,7 @@ class Feedback(models.Model):
     device = models.CharField(max_length=1000, null=False, blank=False)
     created_at = models.DateTimeField(auto_now_add=True)
     page = models.URLField(max_length=1000, null=False, blank=False)
-    type = models.CharField(max_length=10, choices=FeedbackType.choices, black=False, null=False)
+    type = models.CharField(max_length=10, choices=FeedbackType.choices, blank=False, null=False)
 
     def __str__(self):
         return f'{self.user} - {self.text}'
