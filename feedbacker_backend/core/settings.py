@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # external libs,
     'rest_framework',
     'django_filters',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
